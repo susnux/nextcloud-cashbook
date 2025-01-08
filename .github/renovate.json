@@ -1,0 +1,29 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended"
+	],
+	"timezone": "Europe/Berlin",
+	"rebaseWhen": "conflicted",
+	"rangeStrategy": "bump",
+	"platformCommit": "enabled",
+	"ignoreDeps": [
+		"node",
+		"npm"
+	],
+	"packageRules": [
+		{
+		"matchPackageNames": [
+			"*"
+		],
+		"semanticCommitType": "build"
+		},
+		{
+		"matchDepTypes": [
+			"dependencies",
+			"require"
+		],
+		"semanticCommitType": "fix"
+		}
+	]
+}

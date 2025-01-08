@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2024 Ferdinand Thiessen <opensource@fthiessen.de>
+# SPDX-License-Identifier: CC0-1.0
+
+/.idea/
+/.vscode/
+/*.iml
+
+/vendor/
+/vendor-bin/*/vendor/
+
+/.php-cs-fixer.cache
+/tests/.phpunit.cache
+
+/node_modules/
+/js/
+/css/
