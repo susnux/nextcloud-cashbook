@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*!
- * SPDX-FileCopyrightText: 2024 Ferdinand Thiessen <opensource@fthiessen.de>
+ * SPDX-FileCopyrightText: 2025 Ferdinand Thiessen <opensource@fthiessen.de>
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -23,6 +23,8 @@ class Application extends App implements IBootstrap {
 	}
 
 	public function register(IRegistrationContext $context): void {
+		// Register composer autoloader
+		include_once __DIR__ . '/../../vendor/autoload.php';
 	}
 
 	public function boot(IBootContext $context): void {

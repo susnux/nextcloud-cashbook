@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-	SPDX-FileCopyrightText: 2024 Ferdinand Thiessen <opensource@fthiessen.de>
+	SPDX-FileCopyrightText: 2025 Ferdinand Thiessen <opensource@fthiessen.de>
 	SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -9,7 +9,7 @@
 	<name>Cashbook</name>
 	<summary>Nextcloud based Cashbook</summary>
 	<description>Nextcloud based Cashbook</description>
-	<version>1.0.0</version>
+	<version>0.0.1</version>
 	<licence>agpl</licence>
 	<author mail="opensource@fthiessen.de" homepage="https://github.com/susnux/nextcloud-cashbook">Ferdinand Thiessen</author>
 	<namespace>Cashbook</namespace>
@@ -18,4 +18,13 @@
 	<dependencies>
 		<nextcloud min-version="30" max-version="31"/>
 	</dependencies>
+
+	<navigations>
+		<navigation>
+			<name>Cashbook</name>
+			<route>cashbook.page.index</route>
+			<icon>app.svg</icon>
+			<order>66</order>
+		</navigation>
+	</navigations>
 </info>

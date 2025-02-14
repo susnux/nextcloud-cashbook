@@ -1,0 +1,5 @@
+js/
+css/
+vendor/
+vendor-bin/
+node_modules/

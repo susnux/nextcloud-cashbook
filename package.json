@@ -10,7 +10,7 @@
   "scripts": {
     "build": "NODE_ENV=production vite --mode production build",
     "dev": "NODE_ENV=development vite --mode development build",
-    "watch": "NODE_ENV=development vite --mode development watch",
+    "watch": "NODE_ENV=development vite --mode development build --watch",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "stylelint": "stylelint src/**/*.vue src/**/*.scss src/**/*.css"
@@ -19,15 +19,23 @@
     "extends @nextcloud/browserslist-config"
   ],
   "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@nextcloud/auth": "^2.4.0",
+    "@nextcloud/axios": "^2.5.1",
     "@nextcloud/l10n": "^3.1.0",
+    "@nextcloud/logger": "^3.0.2",
+    "@nextcloud/router": "^3.0.1",
     "@nextcloud/vue": "^9.0.0-alpha.5",
-    "vue": "^3.5.13"
+    "pinia": "^2.3.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@nextcloud/browserslist-config": "^3.0.1",
-    "@nextcloud/vite-config": "^2.2.2",
+    "@nextcloud/typings": "^1.9.1",
+    "@nextcloud/vite-config": "^2.3.1",
     "@vue/tsconfig": "^0.7.0",
-    "typescript": "^5.7.2",
-    "vite": "^5"
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
   }
 }
