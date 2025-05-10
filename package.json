@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nextcloud/browserslist-config": "^3.0.1",
     "@nextcloud/typings": "^1.9.1",
-    "@nextcloud/vite-config": "^2.3.1",
+    "@nextcloud/vite-config": "^2.3.5",
     "@vue/tsconfig": "^0.7.0",
     "typescript": "^5.7.3",
     "vite": "^6.1.0"
