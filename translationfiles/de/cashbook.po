@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Nextcloud package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud 3.14159\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"POT-Creation-Date: 2025-02-16 17:13+0100\n"
+"PO-Revision-Date: 2025-02-16 17:21+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#. TRANSLATORS src/CashbookApp.vue:19
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialAppInfoFakeDummyForL10nScript.php:2
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:2
+msgid "Cashbook"
+msgstr "Kassenbuch"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "Nextcloud based Cashbook"
+msgstr "Nextcloud basiertes Kassenbuch"
+
+#. TRANSLATORS src/components/CashbookTable.vue:46
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:4
+msgid "Date"
+msgstr "Datum"
+
+#. TRANSLATORS The reason for this entry e.g. "sales" or "purchase of goods" */ }}</span> (src/components/CashbookTable.vue:49)
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:6
+msgid "Reason"
+msgstr "Grund"
+
+#. TRANSLATORS The reference for this entry e.g. the number of a receipt */ }}</span> (src/components/CashbookTable.vue:51)
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:8
+msgid "Reference"
+msgstr "Beleg"
+
+#. TRANSLATORS src/components/CashbookTable.vue:55
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:10
+msgid "Text"
+msgstr "Text"
+
+#. TRANSLATORS A short form for sales tax */ }}</span> (src/components/CashbookTable.vue:58)
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:12
+msgid "Tax"
+msgstr "USt."
+
+#. TRANSLATORS The income side of the cashbook */ }}</span> (src/components/CashbookTable.vue:61)
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:14
+msgid "Debit"
+msgstr "Einnahmen"
+
+#. TRANSLATORS The expenses side of the cashbook */ }}</span> (src/components/CashbookTable.vue:64)
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:16
+msgid "Credit"
+msgstr "Ausgaben"
+
+#. TRANSLATORS The current balance of the cashbook */ }}</span> (src/components/CashbookTable.vue:67)
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:18
+msgid "Balance"
+msgstr "Bestand"
+
+#. TRANSLATORS src/components/CashbookTable.vue:70
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:20
+msgid "Row actions"
+msgstr "Zeilenaktionen"
+
+#. TRANSLATORS src/components/CashbookTable.vue:80
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:22
+msgid "Opened:"
+msgstr "Eröffnet:"
+
+#. TRANSLATORS src/components/CashbookTable.vue:86
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:24
+msgid "Closed:"
+msgstr "Geschlossen:"
+
+#. TRANSLATORS src/components/CashbookTable.vue:91
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:26
+msgid "Z-number:"
+msgstr "Z-Bon:"
+
+#. TRANSLATORS src/components/CashbookTable.vue:100
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:28
+msgid "Initial cash:"
+msgstr "Eröffnungsbestand:"
+
+#. TRANSLATORS src/components/CashbookTable.vue:108
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:30
+msgid "Closing cash:"
+msgstr "Endbestand:"
+
+#. TRANSLATORS src/components/NewCashbookDialog.vue:51
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:32
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. TRANSLATORS src/components/NewCashbookDialog.vue:59
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:34
+msgid "Create cashbook"
+msgstr "Kassenbuch anlegen"
+
+#. TRANSLATORS src/components/NewCashbookDialog.vue:81
+#. TRANSLATORS src/views/AppNavigation.vue:65
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:36
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:44
+msgid "New cashbook"
+msgstr "Neues Kassenbuch"
+
+#. TRANSLATORS src/components/NewCashbookDialog.vue:82
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:38
+msgid "Cashbook name"
+msgstr "Kassenbuchname"
+
+#. TRANSLATORS src/components/NewCashbookDialog.vue:83
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:40
+msgid "Account"
+msgstr "Konto"
+
+#. TRANSLATORS src/components/NewCashbookDialog.vue:87
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:42
+msgid "Currency"
+msgstr "Währung"
+
+#. TRANSLATORS src/views/AppNavigation.vue:69
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:46
+msgid "Your cashbooks"
+msgstr "Deine Kassenbücher"
+
+#. TRANSLATORS src/views/CashbookView.vue:45
+#. TRANSLATORS src/views/ExportView.vue:44
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:48
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:58
+msgid "Loading cashbook"
+msgstr "Lade Kassenbücher"
+
+#. TRANSLATORS src/views/EmptyView.vue:19
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:50
+msgid "Cashbook not found"
+msgstr "Kassenbuch nicht gefunden"
+
+#. TRANSLATORS src/views/EmptyView.vue:20
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:52
+msgid "No cashbook selected"
+msgstr "Kein Kassenbuch ausgewählt"
+
+#. TRANSLATORS src/views/EmptyView.vue:24
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:54
+msgid "Select a cashbook from the menu or create a new one."
+msgstr "Wähle ein Kassenbuch oder lege ein neues an."
+
+#. TRANSLATORS src/views/EmptyView.vue:25
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/specialVueFakeDummyForL10nScript.js:56
+msgid ""
+"The cashbook your were looking for does not exist anymore or was unshared "
+"from you."
+msgstr ""
+"Das gesuchte Kassenbuch existiert nicht mehr oder du hast keinen Zugriff "
+"mehr darauf."
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:27
+msgid "Day opening"
+msgstr "Tageseröffnung"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:28
+msgid "Day closing"
+msgstr "Tagesabschluss"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:29
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:31
+msgid "Adjusting entry"
+msgstr "Korrektureintrag"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:32
+msgid "Miscellaneous income"
+msgstr "Sonstige Einnahmen"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:33
+msgid "Sales"
+msgstr "Einnahmen"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:35
+msgid "Transfer to bank"
+msgstr "Transfer zur Bank"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:36
+msgid "Change"
+msgstr "Wechselgeld"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:37
+msgid "Purchases"
+msgstr "Einkauf"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:38
+msgid "Miscellaneous expanses"
+msgstr "Sonstige Ausgaben"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:39
+msgid "Refund"
+msgstr "Rückerstattung"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:40
+msgid "Salaries"
+msgstr "Löhne"
+
+#: /home/ferdinand/Dokumente/Projekte/Aqua/cashbook/src/models/CashbookEntry.ts:41
+msgid "Tips"
+msgstr "Trinkgeldauszahlung"
