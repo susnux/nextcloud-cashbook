@@ -116,14 +116,13 @@ class Version000001Date20250214140000 extends SimpleMigrationStep {
 		]);
 		$table->addColumn('text', Types::TEXT, [
 			'notnull' => false,
-			'length' => 127,
 		]);
 
 		$table->setPrimaryKey(['id'], 'cashbook_entry_index');
-		$table->addForeignKeyConstraint(
+		/*$table->addForeignKeyConstraint(
 			'cashbook_cashbooks',
 			['cashbook_id'],
 			['id'],
-		);
+		);*/
 	}
 }

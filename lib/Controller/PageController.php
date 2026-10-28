@@ -41,7 +41,7 @@ class PageController extends Controller {
 	public function index(): TemplateResponse {
 		Util::addScript($this->appName, 'cashbook-main');
 		Util::addStyle($this->appName, 'cashbook-main');
-		
+
 		return new TemplateResponse($this->appName, 'main');
 	}
 
@@ -71,7 +71,7 @@ class PageController extends Controller {
 	public function exportCashbook(int $cashbookId): TemplateResponse {
 		Util::addScript($this->appName, 'cashbook-export');
 		Util::addStyle($this->appName, 'cashbook-export');
-		
+
 		return new TemplateResponse($this->appName, 'export', renderAs: TemplateResponse::RENDER_AS_BASE);
 	}
 }

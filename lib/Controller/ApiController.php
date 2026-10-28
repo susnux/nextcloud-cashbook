@@ -190,6 +190,7 @@ class ApiController extends OCSController {
 		$qb->insert('cashbook_cashbooks')
 			->setValue('name', $qb->createNamedParameter($name))
 			->setValue('currency', $qb->createNamedParameter($currency))
+			->setValue('owner', $qb->createNamedParameter($this->userId))
 			->executeStatement();
 		return new DataResponse();
 	}
