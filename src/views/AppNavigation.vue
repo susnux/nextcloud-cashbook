@@ -5,9 +5,11 @@
  */
 import type { ICashbook } from '../models/Cashbook';
 
-import { mdiTrashCan } from '@mdi/js';
+import { mdiImport, mdiTrashCan } from '@mdi/js';
 import { t } from '@nextcloud/l10n'
+import { spawnDialog as spawnNcDialog } from '@nextcloud/vue/functions/dialog'
 import { createVNode, getCurrentInstance, render, toRaw, type Component } from 'vue';
+import { useRouter } from 'vue-router';
 import { deleteCashbook } from '../api/cashbooks';
 import { useCashbookStore } from '../store/cashbookStore';
 
@@ -18,9 +20,19 @@ import NcAppNavigationItem from '@nextcloud/vue/components/NcAppNavigationItem';
 import NcAppNavigationList from '@nextcloud/vue/components/NcAppNavigationList';
 import NcAppNavigationNew from '@nextcloud/vue/components/NcAppNavigationNew';
 import NcIconSvgWrapper from '@nextcloud/vue/components/NcIconSvgWrapper';
+import ImportCashbookDialog from '../components/ImportCashbookDialog.vue';
 import NewCashbookDialog from '../components/NewCashbookDialog.vue';
 
 const store = useCashbookStore()
+const router = useRouter()
+
+async function importCashbook() {
+	const cashbook = await spawnNcDialog(ImportCashbookDialog)
+	if (cashbook) {
+		store.cashbooks.push(cashbook)
+		router.push({ name: 'cashbook', params: { cashbook: String(cashbook.id) } })
+	}
+}
 
 async function onDeleteCashbook(cashbook: ICashbook) {
 	await deleteCashbook(cashbook)
@@ -84,5 +96,14 @@ function spawnDialog<P extends Array<unknown> = unknown[]>(
 				</template>
 			</NcAppNavigationItem>
 		</NcAppNavigationList>
+		<template #footer>
+			<NcAppNavigationList>
+				<NcAppNavigationItem :name="t('cashbook', 'Import cashbook')" @click="importCashbook">
+					<template #icon>
+						<NcIconSvgWrapper :path="mdiImport" :size="20" />
+					</template>
+				</NcAppNavigationItem>
+			</NcAppNavigationList>
+		</template>
 	</NcAppNavigation>
 </template>
