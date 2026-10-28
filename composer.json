@@ -34,8 +34,7 @@
 		"league/csv": "^9.0"
 	},
 	"require-dev": {
-		"nextcloud/ocp": "dev-stable31",
-		"roave/security-advisories": "dev-latest"
+		"nextcloud/ocp": "dev-stable33"
 	},
 	"config": {
 		"allow-plugins": {
@@ -44,7 +43,7 @@
 		"optimize-autoloader": true,
 		"sort-packages": true,
 		"platform": {
-			"php": "8.2"
+			"php": "8.3"
 		}
 	}
 }
