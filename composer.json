@@ -10,8 +10,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"OCA\\Cashbook\\": "lib/",
-			"OCP\\": "vendor-bin/nextcloud-ocp/vendor/nextcloud/ocp/OCP"
+			"OCA\\Cashbook\\": "lib/"
 		}
 	},
 	"scripts": {
