@@ -14,7 +14,7 @@ use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\IDBConnection;
 
 /**
- * @template-implements QBMapper<Cashbook>
+ * @template-extends QBMapper<Cashbook>
  */
 class CashbookMapper extends QBMapper {
 
@@ -32,5 +32,18 @@ class CashbookMapper extends QBMapper {
 				$qb->expr()->eq('id', $qb->createNamedParameter($id, IQueryBuilder::PARAM_INT)),
 			);
 		return $this->findEntity($qb);
+	}
+
+	/**
+	 * @return list<Cashbook>
+	 */
+	public function getCashbooksByOwner(string $owner): array {
+		$qb = $this->db->getQueryBuilder();
+		$qb->select('*')
+			->from($this->tableName)
+			->where(
+				$qb->expr()->eq('owner', $qb->createNamedParameter($owner)),
+			);
+		return $this->findEntities($qb);
 	}
 }

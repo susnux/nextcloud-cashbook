@@ -58,9 +58,11 @@ class ApiController extends OCSController {
 	#[NoAdminRequired]
 	#[ApiRoute(verb: 'GET', url: '/api/v1/cashbooks')]
 	public function index(): DataResponse {
-		$qb = $this->db->getQueryBuilder();
-		$result = $qb->select('*')->from('cashbook_cashbooks')->executeQuery();
-		$cashbooks = array_map(fn ($row) => Cashbook::fromRow($row), $result->fetchAll());
+		if ($this->userId === null) {
+			return new DataResponse([]);
+		}
+
+		$cashbooks = $this->cashbookMapper->getCashbooksByOwner($this->userId);
 		return new DataResponse(
 			$cashbooks
 		);
