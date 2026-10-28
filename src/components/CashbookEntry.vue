@@ -8,21 +8,21 @@ import { EntryReasonReadable, type ICashbookEntry } from '../models/CashbookEntr
 
 import { mdiEye, mdiInformation, mdiPencil, mdiTrashCan } from '@mdi/js';
 import { getCanonicalLocale } from '@nextcloud/l10n';
-import { useFormatDateTime } from '@nextcloud/vue';
+import { useFormatTime } from '@nextcloud/vue';
 import { computed } from 'vue';
-
-import NcActions from '@nextcloud/vue/dist/Components/NcActions.js'
-import NcActionButton from '@nextcloud/vue/dist/Components/NcActionButton.js'
-import NcActionLink from '@nextcloud/vue/dist/Components/NcActionLink.js'
-import NcIconSvgWrapper from '@nextcloud/vue/dist/Components/NcIconSvgWrapper.js'
 import { formatCurrency } from '../utils/formatter.ts';
+
+import NcActions from '@nextcloud/vue/components/NcActions'
+import NcActionButton from '@nextcloud/vue/components/NcActionButton'
+import NcActionLink from '@nextcloud/vue/components/NcActionLink'
+import NcIconSvgWrapper from '@nextcloud/vue/components/NcIconSvgWrapper'
 
 const props = defineProps<{
 	cashbook: ICashbook
 	modelValue: ICashbookEntry
 }>()
 
-const { formattedTime } = useFormatDateTime(props.modelValue.date, { relativeTime: false, format: { dateStyle: 'medium', timeStyle: 'short' } })
+const formattedTime = useFormatTime(props.modelValue.date, { format: { dateStyle: 'medium', timeStyle: 'short' } })
 const formattedTax = computed(() => props.modelValue.tax?.toLocaleString(getCanonicalLocale(), { style: 'percent' }) ?? '')
 
 const formattedReason = computed(() => props.modelValue.reason && EntryReasonReadable[props.modelValue.reason])
