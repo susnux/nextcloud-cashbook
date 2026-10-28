@@ -99,14 +99,14 @@ type FetchEntryByDateOption = {
  * Fetch list of available cashbooks for the current user
  */
 export async function fetchEntriesByDate(cashbook: ICashbook, { begin, end }: FetchEntryByDateOption): Promise<ICashbookEntry[]> {
-	const { data } = await axios.get<OCSResponse<ICashbookEntry[]>>(
+	const { data } = await axios.get<OCSResponse<RawCashbookEntry[]>>(
 		generateApiRoute(API_ENDPOINT.Cashbook, `/${cashbook.id}/entries/print?begin=${begin.toISOString()}&end=${end.toISOString()}`),
 	)
 	if (data.ocs.meta.status !== 'ok') {
 		throw new Error(data.ocs.meta.message, { cause: data.ocs })
 	}
 
-	return data.ocs.data
+	return data.ocs.data.map(parseEntry)
 }
 
 
